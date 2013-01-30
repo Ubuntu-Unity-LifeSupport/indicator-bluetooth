@@ -1,0 +1,21 @@
+Overview of changes in indicator-bluetooth 0.0.4
+
+    * Stop items being duplicated on resume from suspend
+
+Overview of changes in indicator-bluetooth 0.0.3
+
+    * Fix service file having incorrect path
+    * Set useful values for accessible description
+
+Overview of changes in indicator-bluetooth 0.0.2
+
+    * Stop feedback loop when settings changed outside of indicator
+    * Implement disconnecting from devices
+    * Add accessible description
+    * Hide devices without controls
+    * Change enable label to match design
+    * Added translations
+
+Overview of changes in indicator-bluetooth 0.0.1
+
+    * First release
