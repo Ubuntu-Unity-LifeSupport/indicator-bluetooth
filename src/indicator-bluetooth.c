@@ -2,14 +2,13 @@
  * generated from indicator-bluetooth.vala, do not modify */
 
 /*
- * Copyright (C) 2012 Canonical Ltd.
+ * Copyright (C) 2012-2013 Canonical Ltd.
  * Author: Robert Ancell <robert.ancell@canonical.com>
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
- * license.
+ * Foundation, version 3 of the License.
+ * See http://www.gnu.org/copyleft/gpl.html the full text of the license.
  */
 
 #include <glib.h>
@@ -277,7 +276,7 @@ static void ___lambda4_ (BluetoothIndicator* self, GObject* object, GAsyncResult
 		_inner_error_ = NULL;
 		_tmp5_ = e;
 		_tmp6_ = _tmp5_->message;
-		g_warning ("indicator-bluetooth.vala:76: Failed to connect to bluetooth service: %" \
+		g_warning ("indicator-bluetooth.vala:75: Failed to connect to bluetooth service: %" \
 "s", _tmp6_);
 		_g_error_free0 (e);
 	}

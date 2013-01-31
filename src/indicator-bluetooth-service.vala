@@ -1,12 +1,11 @@
 /*
- * Copyright (C) 2012 Canonical Ltd.
+ * Copyright (C) 2012-2013 Canonical Ltd.
  * Author: Robert Ancell <robert.ancell@canonical.com>
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
- * license.
+ * Foundation, version 3 of the License.
+ * See http://www.gnu.org/copyleft/gpl.html the full text of the license.
  */
 
 public class BluetoothIndicator

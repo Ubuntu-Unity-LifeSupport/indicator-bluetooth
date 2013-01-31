@@ -2,14 +2,13 @@
  * generated from indicator-bluetooth-service.vala, do not modify */
 
 /*
- * Copyright (C) 2012 Canonical Ltd.
+ * Copyright (C) 2012-2013 Canonical Ltd.
  * Author: Robert Ancell <robert.ancell@canonical.com>
  *
  * This program is free software: you can redistribute it and/or modify it under
  * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version. See http://www.gnu.org/copyleft/gpl.html the full text of the
- * license.
+ * Foundation, version 3 of the License.
+ * See http://www.gnu.org/copyleft/gpl.html the full text of the license.
  */
 
 #include <glib.h>
@@ -964,7 +963,7 @@ static void bluetooth_indicator_killswitch_state_changed_cb (BluetoothIndicator*
 		_inner_error_ = NULL;
 		_tmp25_ = e;
 		_tmp26_ = _tmp25_->message;
-		g_warning ("indicator-bluetooth-service.vala:212: Failed to emit signal: %s", _tmp26_);
+		g_warning ("indicator-bluetooth-service.vala:211: Failed to emit signal: %s", _tmp26_);
 		_g_error_free0 (e);
 	}
 	__finally0:
@@ -1619,7 +1618,7 @@ static void __lambda6_ (BluetoothMenuItem* self, GObject* object, GAsyncResult* 
 		_inner_error_ = NULL;
 		_tmp4_ = e;
 		_tmp5_ = _tmp4_->message;
-		g_warning ("indicator-bluetooth-service.vala:332: Failed to connect service: %s", _tmp5_);
+		g_warning ("indicator-bluetooth-service.vala:331: Failed to connect service: %s", _tmp5_);
 		_g_error_free0 (e);
 	}
 	__finally1:
@@ -1717,7 +1716,7 @@ void show_control_center (const gchar* panel) {
 		_inner_error_ = NULL;
 		_tmp3_ = e;
 		_tmp4_ = _tmp3_->message;
-		g_warning ("indicator-bluetooth-service.vala:346: Failed to open control center: %" \
+		g_warning ("indicator-bluetooth-service.vala:345: Failed to open control center: %" \
 "s", _tmp4_);
 		_g_error_free0 (e);
 	}
@@ -1764,7 +1763,7 @@ gint _vala_main (gchar** args, int args_length1) {
 		_inner_error_ = NULL;
 		_tmp3_ = e;
 		_tmp4_ = _tmp3_->message;
-		g_warning ("indicator-bluetooth-service.vala:366: Failed to start bluetooth indica" \
+		g_warning ("indicator-bluetooth-service.vala:365: Failed to start bluetooth indica" \
 "tor service: %s", _tmp4_);
 		result = EXIT_FAILURE;
 		_g_error_free0 (e);
