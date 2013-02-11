@@ -1,3 +1,23 @@
+indicator-bluetooth (0.0.6-0ubuntu1) raring; urgency=low
+
+  [ Michael Terry ]
+  * debian/copyright:
+    - Note that code is GPL-3, not GPL-3+
+  * debian/control:
+    - Add Vcs-Bzr entries
+  * debian/source/format:
+    - Switch to format 1.0, to match rest of indicator stack and for our
+      daily landing support to work.
+  * Automatic snapshot from revision 44 (bootstrap)
+
+  [ Robert Ancell ]
+  * New upstream release:
+    - Add "Set Up New Device" menu item (LP: #1116292)
+    - Only show indicator if Bluetooth adapter present (LP: #1116289)
+    - Support existing gsettings key to disable indicator (LP: #1115394)
+
+ -- Robert Ancell <robert.ancell@canonical.com>  Tue, 12 Feb 2013 10:44:19 +1300
+
 indicator-bluetooth (0.0.5-0ubuntu1) raring; urgency=low
 
   * New upstream release:
