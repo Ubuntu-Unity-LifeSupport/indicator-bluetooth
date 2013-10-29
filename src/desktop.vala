@@ -104,10 +104,10 @@ class Desktop: Profile
         debug (@"creating action for $action_name");
         var a = new SimpleAction.stateful (action_name,
                                            null,
-                                           device.is_connected);
+                                           new Variant.boolean (device.is_connected));
 
         a.activate.connect (()
-          => a.set_state (!a.get_state().get_boolean()));
+          => a.set_state (new Variant.boolean (!a.get_state().get_boolean())));
 
         a.notify["state"].connect (()
           => bluetooth.set_device_connected (id, a.get_state().get_boolean()));
@@ -119,7 +119,7 @@ class Desktop: Profile
       {
         debug (@"updating action $(device.id) state to $(device.is_connected)");
         var action = connect_actions.lookup (device.id);
-        action.set_state (device.is_connected);
+        action.set_state (new Variant.boolean (device.is_connected));
       }
 
     return item;
@@ -185,7 +185,7 @@ class Desktop: Profile
     // quick toggles section
     section = new Menu ();
     section.append_item (create_enabled_menuitem ());
-    item = new MenuItem ("Visible", "indicator.desktop-discoverable");
+    item = new MenuItem (_("Visible"), "indicator.desktop-discoverable");
     item.set_attribute ("x-canonical-type", "s",
                         "com.canonical.indicator.switch");
     section.append_item (item);
@@ -218,16 +218,16 @@ class Desktop: Profile
   {
     var action = new SimpleAction.stateful ("desktop-discoverable",
                                             null,
-                                            bluetooth.discoverable);
+                                            new Variant.boolean (bluetooth.discoverable));
 
     action.activate.connect (()
-        => action.set_state (!action.get_state().get_boolean()));
+        => action.set_state (new Variant.boolean (!action.get_state().get_boolean())));
 
     action.notify["state"].connect (()
         => bluetooth.try_set_discoverable (action.get_state().get_boolean()));
 
     bluetooth.notify["discoverable"].connect (()
-        => action.set_state (bluetooth.discoverable));
+        => action.set_state (new Variant.boolean (bluetooth.discoverable)));
 
     return action;
   }
