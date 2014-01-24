@@ -66,7 +66,7 @@ class Desktop: Profile
 
     // know when to show the indicator & when to hide it
     settings.changed["visible"].connect (()=> update_visibility());
-    bluetooth.notify["enabled"].connect (() => update_visibility());
+    bluetooth.notify["supported"].connect (() => update_visibility());
     update_visibility ();
 
     // when devices change, rebuild our device section
@@ -82,7 +82,7 @@ class Desktop: Profile
 
   void update_visibility ()
   {
-    visible = bluetooth.enabled && settings.get_boolean("visible");
+    visible = bluetooth.supported && settings.get_boolean("visible");
   }
 
   ///
@@ -211,7 +211,10 @@ class Desktop: Profile
 
   void show_settings (string panel)
   {
-    spawn_command_line_async ("gnome-control-center " + panel);
+    if (Environment.get_variable ("XDG_CURRENT_DESKTOP") == "Unity" && Environment.find_program_in_path ("unity-control-center") != null)
+      spawn_command_line_async ("unity-control-center " + panel);
+    else
+      spawn_command_line_async ("gnome-control-center " + panel);
   }
 
   Action create_discoverable_action (Bluetooth bluetooth)
