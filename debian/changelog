@@ -1,3 +1,9 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu1) artful; urgency=medium
+
+  * Drop alternate dependency on ubuntu-system-settings
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Mon, 05 Jun 2017 22:06:39 +0000
+
 indicator-bluetooth (0.0.6+17.04.20170322-0ubuntu1) zesty; urgency=medium
 
   * no change rebuild
