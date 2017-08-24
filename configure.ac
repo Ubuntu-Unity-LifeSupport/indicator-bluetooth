@@ -16,11 +16,9 @@ dnl ###########################################################################
 
 GLIB_REQUIRED_VERSION=2.36
 GIO_REQUIRED_VERSION=2.36
-URL_DISPATCHER_1_REQUIRED_VERSION=1
 
 PKG_CHECK_MODULES(SERVICE_DEPS, [glib-2.0 >= $GLIB_REQUIRED_VERSION
-                                 gio-unix-2.0 >= $GIO_REQUIRED_VERSION
-                                 url-dispatcher-1 >= $URL_DISPATCHER_1_REQUIRED_VERSION])
+                                 gio-unix-2.0 >= $GIO_REQUIRED_VERSION])
 
 SYSTEMD_USERDIR=`$PKG_CONFIG --variable=systemduserunitdir systemd`
 AC_SUBST(SYSTEMD_USERDIR)

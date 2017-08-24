@@ -7,7 +7,6 @@ Build-Depends: debhelper (>= 9.0),
                dh-translations,
                gnome-common,
                libglib2.0-dev,
-               liburl-dispatcher1-dev,
                systemd,
                valac (>=0.18),
 Standards-Version: 3.9.4

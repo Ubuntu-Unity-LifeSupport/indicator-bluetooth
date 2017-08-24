@@ -62,7 +62,7 @@ class Phone: Profile
 
   void show_settings (string panel)
   {
-    UrlDispatch.send ("settings:///system/bluetooth");
+    //UrlDispatch.send ("settings:///system/bluetooth");
   }
 
   Action create_settings_action ()
