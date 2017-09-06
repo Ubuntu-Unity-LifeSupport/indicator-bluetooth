@@ -16,6 +16,7 @@ Homepage: https://launchpad.net/indicator-bluetooth
 # and sync up the code again.
 Vcs-Bzr: https://code.launchpad.net/~indicator-applet-developers/indicator-bluetooth/trunk
 Vcs-Browser: https://bazaar.launchpad.net/~indicator-applet-developers/indicator-bluetooth/trunk/files
+X-Ubuntu-Use-Langpack: yes
 
 Package: indicator-bluetooth
 Architecture: any

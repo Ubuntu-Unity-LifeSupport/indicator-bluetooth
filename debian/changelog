@@ -1,3 +1,11 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu3) artful; urgency=medium
+
+  * debian/control: use 'X-Ubuntu-Use-Langpack: yes' since the indicator
+    is now in universe, this way the translations are still available on 
+    launchpad and exported to the langpacks
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Wed, 06 Sep 2017 16:26:07 +0200
+
 indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu2) artful; urgency=medium
 
   * Drop url-dispatcher code, phone product no longer supported.
