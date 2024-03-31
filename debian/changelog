@@ -1,3 +1,9 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu5) noble; urgency=medium
+
+  * No-change rebuild for CVE-2024-3094
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Sun, 31 Mar 2024 08:58:32 +0000
+
 indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu4) noble; urgency=medium
 
   * No-change rebuild against libglib2.0-0t64
