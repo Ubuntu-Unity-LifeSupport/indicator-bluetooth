@@ -1,3 +1,9 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu6) resolute; urgency=medium
+
+  * No-change mass rebuild for Ubuntu 26.04 (LP: #2132257)
+
+ -- Graham Inggs <ginggs@ubuntu.com>  Mon, 15 Dec 2025 19:56:03 +0000
+
 indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu5) noble; urgency=medium
 
   * No-change rebuild for CVE-2024-3094
