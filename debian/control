@@ -24,7 +24,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          bluez (>= 5),
          unity-control-center | gnome-control-center,
-         gnome-bluetooth,
+         gnome-bluetooth-sendto,
          indicator-common,
 Replaces: gnome-bluetooth (<< 3.6.1-0ubuntu2)
 Breaks: gnome-bluetooth (<< 3.6.1-0ubuntu2)

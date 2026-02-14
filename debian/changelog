@@ -1,3 +1,9 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu7) resolute; urgency=medium
+
+  * Depend on gnome-bluetooth-sendto instead of transitional package
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Sat, 14 Feb 2026 11:44:40 -0500
+
 indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu6) resolute; urgency=medium
 
   * No-change mass rebuild for Ubuntu 26.04 (LP: #2132257)
