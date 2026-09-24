@@ -1,3 +1,14 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu7+unity1) resolute; urgency=medium
+
+  * Build-depend on systemd-dev instead of systemd. systemd.pc moved to
+    systemd-dev, so configure found no systemduserunitdir and the 26.04
+    rebuild dropped /usr/lib/systemd/user/indicator-bluetooth.service;
+    without it the indicator service never starts in a systemd user
+    session.
+    (LP: #2153375)
+
+ -- Ubuntu Unity Life Support <mihail.rozshko@gmail.com>  Thu, 24 Sep 2026 22:30:00 +0000
+
 indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu7) resolute; urgency=medium
 
   * Depend on gnome-bluetooth-sendto instead of transitional package
