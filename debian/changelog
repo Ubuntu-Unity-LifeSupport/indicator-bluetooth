@@ -1,3 +1,12 @@
+indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu7+unity2) resolute; urgency=medium
+
+  * Rebuild the device menu only when a Device1 property that the menu
+    uses changes, and list only paired, trusted or connected devices.
+    RSSI updates during a scan rebuilt the menu each time, and
+    unity-panel-service grew by GiB (LP: #1557331).
+
+ -- Aleksandr Gusarov <alexandergusarov@gmail.com>  Sat, 07 Nov 2026 16:32:46 +0100
+
 indicator-bluetooth (0.0.6+17.10.20170605-0ubuntu7+unity1) resolute; urgency=medium
 
   * Build-depend on systemd-dev instead of systemd. systemd.pc moved to
